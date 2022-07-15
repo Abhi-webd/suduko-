@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.dark{
+    background-color: #363535;
+    color: white;
+}
+
+.header{
+    text-align: center;
+    padding: 10px;
+    border-bottom: solid 2px blue;
+}
+
+#setup-game{
+    display: flex;
+    justify-content: center;
+}
+
+#setup-game > *{
+    margin-bottom: 10px;
+    padding:0 50px;
+    display: flex;
+    align-items: center;
+}
+label{
+    padding: 0 10px;
+}
+
+button{
+    justify-self: center;
+}
+p#timer,p#lives{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+#game{
+    display: flex;
+    justify-content: center; 
+}
+
+#num-container > p{
+    border: 1px solid black;
+    border-radius: 20%;
+    height: 30px;
+    width: 30px;
+    font-size: 20pt;
+    margin: 5px 0 5px 50px;
+    text-align: center;
+}
+
+#board{
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 300px;
+    height: 300px;
+}
+
+.tile{
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 20pt;
+}
+p.selected{
+    background-color: cadetblue;
+}
+p.incorrect{
+    color: crimson;
+}
+.rightBorder{
+    border-right: 4px solid black;
+}
+.bottomBorder{
+    border-bottom: 4px solid black;
+}
+.topBorder{
+    border-top: 4px solid black;
+}
+.leftBorder{
+    border-left: 4px solid black;
+}
+
+@media (max-width: 950px){
+    #setup-game{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px){
+    #num-container > p{
+        border: 1px solid black;
+        border-radius: 20%;
+        height: 20px;
+        width: 20px;
+        font-size: 12pt;
+        margin: 5px 0 5px 30px;
+        text-align: center;
+    }
+
+    #board{
+        width: 220px;
+        height: 220px;
+    }
+    
+    .tile{
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        margin: 0px;
+        vertical-align: middle;
+        font-size: 12pt;
+    }
+}

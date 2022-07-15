@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <h1>Sudoku</h1>
+        <div id="setup-game">
+            <div id="diff">
+                <h3>Select Difficulty: </h3>
+                <label><input id = "diff-e" type="radio" name="diff" value="easy" checked>Easy</label>
+                <label><input id = "diff-m" type="radio" name="diff" value="medium">Medium</label>
+                <label><input id = "diff-h" type="radio" name="diff" value="hard">Hard</label>
+            </div>
+            <div id="time">
+                <h3>Select Time: </h3>
+                <label><input id = "time-5" type="radio" name="time" value="five" checked>5 min</label>
+                <label><input id = "time-10" type="radio" name="time" value="ten" >10 min</label>
+                <label><input id = "time-20" type="radio" name="time" value="twenty" >20 min</label>
+            </div>
+            <div id="theme">
+                <h3>Select Theme: </h3>
+                <label><input id = "theme-l" type="radio" name="theme" value="light" checked>Light</label>
+                <label><input id = "theme-d" type="radio" name="theme" value="dark">Dark</label>
+            </div>
+        </div>
+        <button id="start-btn">Solve Sudoku</button>
+    </section>
+    <section class="main">
+        <div id="stats">
+            <p id = "timer"></p>
+            <p id = "lives"></p>
+        </div>
+        <div id="game">
+            <div id="board"></div>
+            <div  id="num-container" class="hidden">
+                <p id="one">1</p>
+                <p id="two">2</p>
+                <p id="three">3</p>
+                <p id="four">4</p>
+                <p id="five">5</p>
+                <p id="six">6</p>
+                <p id="seven">7</p>
+                <p id="eight">8</p>
+                <p id="nine">9</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
